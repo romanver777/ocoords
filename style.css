@@ -1,0 +1,69 @@
+:root {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #fff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+#app {
+  width: inherit;
+  height: inherit;
+}
+.map {
+  background: url(./main.png) no-repeat center;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+}
+.map::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2, 15, 32, 0.4);
+}
+.btn {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  border-radius: 41px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  opacity: 0.7;
+  background-image: url(./plus.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.btn_green {
+  background-color: #6ABF4B;
+}
+.btn_blue {
+  background-color: #3877EE;
+}
+.btn_active {
+  background-image: url(./minus.svg);
+  background-position: 15px center;
+  width: auto;
+  padding: 11px 15px;
+}
+.name {
+  display: none;
+  color: #fff;
+  font-family: Arial;
+  font-size: 14px;
+  margin-left: 25px;
+}
+.btn_active .name{
+  display: block;
+}
